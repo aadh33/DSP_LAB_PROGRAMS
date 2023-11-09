@@ -12,10 +12,10 @@ y = np.sin(2*np.pi*my_freq*t)
 
 
 plt.figure(figsize = (6, 4))
-plt.title('frequency = '+str(my_freq)+ ' Hz')
+plt.title('CT SINE WAVE')
 plt.plot(t, y)
 plt.ylabel('Amplitude')
-plt.xlabel('Time (sec)')
+plt.xlabel('Time (sec)'+'frequency = '+str(my_freq)+ ' Hz')
 plt.show()
 
 #DT Signal
@@ -33,7 +33,7 @@ discrete_sine_wave = amplitude * np.sin(2 * np.pi * frequency * n)
 
 plt.stem(n, discrete_sine_wave, basefmt=' ', markerfmt='bo', linefmt='b-', label='Sine Wave')
 plt.title('Discrete-Time Sine Wave')
-plt.xlabel('Time (n)')
+plt.xlabel('Time (n)'+ 'frequency = '+str(my_freq)+ ' Hz')
 plt.ylabel('Amplitude')
 plt.grid(True)
 plt.legend()
